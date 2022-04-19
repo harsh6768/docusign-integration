@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<title>
+    Test HTML
+</title>
+
+<body>
+    <div style='font-family: Arial;'>
+        <div style='padding:10px;'>
+            <h1>Approval form</h1>
+        </div>
+        <div>
+            <h2 style='padding:10px;'>Example Services</h2>
+            <table style='width:100%;border-collapse:collapse;' cellspacing='0'>
+                <colgroup>
+                    <col style='width: 70%;padding:10px;border-bottom:solid 1px;'>
+                    <col style='width: 30%;text-align:right;padding:10px;border-bottom:solid 1px;'>
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td style='width: 70%;padding:10px;border-bottom:solid 1px;'>Example Item A Cost</td>
+                        <td style='width: 30%;text-align:right;padding:10px;border-bottom:solid 1px;'>
+                            <!-- {{"tabLabel": "feeA"}} -->
+                            FeeA
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='width: 70%;padding:10px;border-bottom:solid 1px;'>Example Item B Cost</td>
+                        <td style='width: 30%;text-align:right;padding:10px;border-bottom:solid 1px;'>
+                            <!-- {{"tabLabel": "feeB"}} -->
+                            FeeB
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style='width: 70%;padding:10px;border-bottom:solid 1px;'>Other fees</td>
+                        <td style='width: 30%;text-align:right;padding:10px;border-bottom:solid 1px;'>
+                            <!-- {{"tabLabel": "otherFees"}} -->
+                            Other fees
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style='border-top: solid 1px;text-align:left;padding:10px;'>
+            <div id='agreeSection'>
+                <!-- {{"tabLabel": "agreeButton"}} -->
+                AgreeButton
+            </div>
+        </div>
+    </div>
+    <div>Sample HTML with sending tabs as embedded HTML</div>
+    <div>
+        Signer1 Name:
+        <ds-fullname data-ds-role="Signer1" />
+    </div>
+    <div>Signer1 Email: <input data-ds-type="email" data-ds-role="Signer1" /></div>
+    <div>
+        Signer1 Signature:
+        <ds-signature data-ds-role="Signer1" />
+    </div>
+    <div>
+        Signer 2 Date Signed:
+        <ds-date-signed data-ds-role="Signer2" />
+    </div>
+    <div>Signer 2 Initial:
+        <ds-initial data-ds-role="Signer2" />
+    </div>
+    <div>Signer 2 Signature:
+        <ds-signature data-ds-role="Signer2" />
+    </div>
+</body>
+
+</html>
